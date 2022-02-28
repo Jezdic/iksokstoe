@@ -1,0 +1,114 @@
+h1 {
+  text-align: center;
+  text-decoration: none;
+  color: #d1b580;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.609);
+  font-size: 90px;
+  font-family: fantasy;
+  cursor: default;
+}
+.button {
+  background-color: #d1b580;
+  border: none;
+  color: #d1b580;
+  padding: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 70px;
+  margin: 3px 3px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 120px;
+  height: 120px;
+  font-family: 'Architects Daughter';
+}
+.startDugmeDiv {
+  background-color: #d1b580;
+  border: none;
+  color: #d1b580;
+  padding: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 70px;
+  margin: 3px 3px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  font-family: cursive;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+body {
+  background-image: url(/client/img/wp41.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.text {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 50px;
+  color: #d1b580;
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.609);
+}
+.title {
+  text-decoration: none;
+  color: #d1b580;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.609);
+  font-size: 90px;
+  font-family: fantasy;
+  cursor: default;
+}
+#wrapper {
+  text-align: center;
+}
+.input {
+  font-size: 40px;
+  height: 45px;
+  color: #201e1a;
+  border: 1px hidden #524b3d;
+  border-radius: 6px;
+  background-color: #d1b5809b;
+  padding: 24px;
+  font-weight: bolder;
+  font-family: 'Architects Daughter';
+  box-sizing: border-box;
+  font-variant: small-caps;
+}
+#onlineDiv {
+  color: white;
+  position: absolute;
+  top: 30%;
+}
+.online-igrac {
+  border: 3px solid #d1b5809b;
+}
+
+#chat-box {
+  position: absolute;
+  width: 25%;
+  top: 0px;
+  right: 0;
+}
+
+#saljiPoruku {
+  width: 100%;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+#saljiPoruku:focus {
+  outline: none;
+}
+
+#chat-messages {
+  background-color: rgba(143, 138, 138, 0.3);
+  width: 100%;
+  height: 690px;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-size: 1.5rem;
+}

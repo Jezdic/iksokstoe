@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="/client/index.css" />
+      <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+      <script src="/socket.io/socket.io.js" defer></script>
+      <script src="/client/js/game.js" defer></script>
+   </head>
+   <body>
+      <h1>
+         Икс-Окс-Тое
+      </h1>
+      <div id="wrapper">
+         <button class="button" data-position='0'> 0 </button>
+         <button class="button" data-position='1'> 1 </button>
+         <button class="button" data-position='2'> 2 </button><br>
+         <button class="button" data-position='3'> 3 </button>
+         <button class="button" data-position='4'> 4 </button>
+         <button class="button" data-position='5'> 5 </button><br>
+         <button class="button" data-position='6'> 6 </button>
+         <button class="button" data-position='7'> 7 </button>
+         <button class="button" data-position='8'> 8 </button>
+      </div>
+      <div class="text" id="prviIgracDiv">
+         <p>Username: <input class="input" type="text" id="prviIme" onkeydown="PostaviIme(this)"></p>
+      </div>
+      <div class="text" id="drugiIgracDiv"></div>
+      <div id="nastavakGejma" style="visibility:hidden; text-align:center">
+         <button onclick="spreman()" style="background-color: greenyellow; color:black">Sledeci gejm</button>
+         <button onclick="otkazi()" style="background-color: red; color:black">Otkazi</button>
+      </div>
+      <div id="onlineDiv" style="visibility: hidden;">
+         <h2">Online igraci:</h2><br>
+      </div>
+      <div id="chat-box" style="display: none;">
+         <div id="chat-messages"></div>
+         <input type="text" id="saljiPoruku">
+      </div>
+      <audio id="izazov-audio" src='/client/audio/izazov.mp3'/>
+      <audio id="start-audio" src='/client/audio/start.mp3'/>
+      <audio id="move-audio" src='/client/audio/move.mp3'/>
+   </body>
+</html>
