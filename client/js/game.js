@@ -25,7 +25,7 @@ socket.on('start', data => {
   if (data.opponentId) {
     onlineDiv.style.visibility = 'hidden';
     onlineIgraci[data.opponentId].innerHTML = `
-        <button onclick = "izazovi(${data.opponentId})">Izazovi</button>
+        <button class="izazoviBtn" onclick = "izazovi(${data.opponentId})">Izazovi</button>
     `;
   }
   turn = data.turn;
@@ -60,7 +60,7 @@ const izazovi = igrac => {
 const prihvaceno = igrac => {
   onlineDiv.style.visibility = 'hidden';
   document.getElementById(`izazov-${igrac}`).innerHTML = `
-  <button onclick = "izazovi(${igrac})">Izazovi</button>
+  <button class="izazoviBtn" onclick = "izazovi(${igrac})">Izazovi</button>
   `;
   socket.emit('gameStart', igrac);
 };
@@ -68,7 +68,7 @@ const prihvaceno = igrac => {
 const odbijeno = igrac => {
   const id = `izazov-${igrac}`;
   document.getElementById(id).innerHTML = `
-  <button onclick = "izazovi(${igrac})">Izazovi</button>
+  <button class="izazoviBtn"  onclick = "izazovi(${igrac})">Izazovi</button>
   `;
   socket.emit('declineChallenge', igrac);
 };
@@ -119,7 +119,7 @@ socket.on('userConnected', data => {
     }" >
                 <div class='online-igrac'>${
                   data.username
-                }<div id=${spanId}><button onclick = "izazovi(${
+                }<div id=${spanId}><button class="izazoviBtn" onclick = "izazovi(${
       data.id
     })">Izazovi</button></div></div>
             </div>

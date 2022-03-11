@@ -7,12 +7,13 @@ h1 {
   font-family: fantasy;
   cursor: default;
 }
+
 .button {
   background-color: #d1b580;
   border: none;
   color: #d1b580;
-  padding: 30px;
-  text-align: center;
+  display: grid;
+  place-items: center;
   display: inline-block;
   font-size: 70px;
   margin: 3px 3px;
@@ -22,6 +23,7 @@ h1 {
   height: 120px;
   font-family: 'Architects Daughter';
 }
+
 .startDugmeDiv {
   background-color: #d1b580;
   border: none;
@@ -37,16 +39,19 @@ h1 {
   height: 150px;
   font-family: cursive;
 }
+
 .button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 body {
   background-image: url(/client/img/wp41.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
 .text {
   text-align: center;
   font-family: fantasy;
@@ -54,6 +59,7 @@ body {
   color: #d1b580;
   text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.609);
 }
+
 .title {
   text-decoration: none;
   color: #d1b580;
@@ -62,9 +68,11 @@ body {
   font-family: fantasy;
   cursor: default;
 }
+
 #wrapper {
   text-align: center;
 }
+
 .input {
   font-size: 40px;
   height: 45px;
@@ -78,13 +86,35 @@ body {
   box-sizing: border-box;
   font-variant: small-caps;
 }
+
 #onlineDiv {
   color: white;
+  background-color: #d1b580;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  padding: 2rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
   position: absolute;
   top: 30%;
 }
+
 .online-igrac {
   border: 3px solid #d1b5809b;
+}
+
+.izazoviBtn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.izazoviBtn:hover {
+  background: greenyellow;
+  color: #524b3d;
 }
 
 #chat-box {
